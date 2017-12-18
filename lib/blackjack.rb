@@ -61,7 +61,8 @@ end
 def runner
   welcome
   cardTotal = initial_round
-  until cardTotal >= 21
+  until cardTotal >= 22
+      #when set to 21. player can loose with 21
     cardTotal = hit?(cardTotal)
     display_card_total(cardTotal)
   end
